@@ -269,13 +269,14 @@
             <h1>Quality Objectives Dashboard</h1>
             <p>Management Review - Overall Health Assessment</p>
         </div>
-        
+
         <div class="tabs">
-            <div class="tab active" onclick="switchTab('q4')">Q4 2025</div>
+            <div class="tab active" onclick="switchTab('q1-2026')">Q1 2026</div>
+            <div class="tab" onclick="switchTab('q4')">Q4 2025</div>
             <div class="tab" onclick="switchTab('q3')">Q3 2025</div>
         </div>
         
-        <!-- Q3 Tab Content -->
+        <!-- Q3 2025 Tab Content -->
         <div id="q3" class="tab-content">
             <div class="summary-cards">
                 <div class="summary-card">
@@ -462,9 +463,161 @@
                 </div>
             </div>
         </div>
+
+        <!-- Q1 2026 Tab Content -->
+        <div id="q1-2026" class="tab-content active">
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <div class="number met">12</div>
+                    <div class="label">Objectives Met</div>
+                </div>
+                <div class="summary-card">
+                    <div class="number not-met">1</div>
+                    <div class="label">Objectives Not Met</div>
+                </div>
+                <div class="summary-card">
+                    <div class="number total">13</div>
+                    <div class="label">Total Objectives</div>
+                </div>
+                <div class="summary-card">
+                    <div class="number percentage">92%</div>
+                    <div class="label">Success Rate</div>
+                </div>
+            </div>
+            
+            <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 0 30px 20px 30px; border-radius: 8px;">
+                <strong>📋 Framework Update:</strong> Quality objectives revised effective Q1 2026. Reduced from 17 to 13 objectives with updated targets.
+            </div>
+            
+            <div class="objectives-grid">
+                <div class="objective-card excellent">
+                    <div class="card-header">
+                        <div class="card-title">Customer Satisfaction & Loyalty</div>
+                        <span class="status-badge badge-excellent">Excellent</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-name">Customer Satisfaction (≥3/5 target)</span>
+                            <span class="metric-value value-met">NITC: 4.25 | DCPPE: 4.2</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Contract Renewal (100% target)</span>
+                            <span class="metric-value value-met">100%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Issue Resolution 72hr (90% target)</span>
+                            <span class="metric-value value-met">96.7%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objective-card excellent">
+                    <div class="card-header">
+                        <div class="card-title">Operational Excellence</div>
+                        <span class="status-badge badge-excellent">Excellent</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-name">On-time Delivery (95% target)</span>
+                            <span class="metric-value value-met">100%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">First-time Acceptance (90% target)</span>
+                            <span class="metric-value value-met">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objective-card excellent">
+                    <div class="card-header">
+                        <div class="card-title">Continuous Improvement</div>
+                        <span class="status-badge badge-excellent">Excellent</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-name">Improvement Initiatives (10 target)</span>
+                            <span class="metric-value value-met">33</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objective-card excellent">
+                    <div class="card-header">
+                        <div class="card-title">Business Growth & Competitiveness</div>
+                        <span class="status-badge badge-excellent">Excellent</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-name">Contract Awards (≥2 target)</span>
+                            <span class="metric-value value-met">2 (1 prime, 1 sub)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Active Pipeline (≥3 target)</span>
+                            <span class="metric-value value-met">4 opportunities</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objective-card good">
+                    <div class="card-header">
+                        <div class="card-title">Employee Satisfaction & Development</div>
+                        <span class="status-badge badge-good">Mixed Results</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-name">Voluntary Resignations (≤2 target)</span>
+                            <span class="metric-value value-not-met">4 (Q4 2025)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Employee Satisfaction (80% target)</span>
+                            <span class="metric-value value-met">89%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Employee Development (80% target)</span>
+                            <span class="metric-value value-met">82%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-good" style="width: 67%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="objective-card excellent">
+                    <div class="card-header">
+                        <div class="card-title">QMS Effectiveness</div>
+                        <span class="status-badge badge-excellent">Excellent</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric">
+                            <span class="metric-name">Major Non-conformities (0 target)</span>
+                            <span class="metric-value value-met">0</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">NC Closure (80% target)</span>
+                            <span class="metric-value value-met">100%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <!-- Q4 Tab Content -->
-        <div id="q4" class="tab-content active">
+        <!-- Q4 2025 Tab Content -->
+        <div id="q4" class="tab-content">
             <div class="summary-cards">
                 <div class="summary-card">
                     <div class="number met">10</div>
@@ -652,7 +805,7 @@
         </div>
         
         <div class="footer">
-            Quality Management System Dashboard | Updated 2025
+            Quality Management System Dashboard | Updated 2026
         </div>
     </div>
     
