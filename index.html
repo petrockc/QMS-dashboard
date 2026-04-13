@@ -57,7 +57,6 @@
             border-bottom: 3px solid transparent;
             margin-bottom: -3px;
             transition: all 0.3s ease;
-            position: relative;
         }
         
         .tab:hover {
@@ -202,7 +201,6 @@
         
         .value-met { color: #27ae60; }
         .value-not-met { color: #e74c3c; }
-        .value-close { color: #f39c12; }
         
         .progress-bar {
             width: 100%;
@@ -223,19 +221,12 @@
         .progress-good { background: linear-gradient(90deg, #f39c12, #e67e22); }
         .progress-poor { background: linear-gradient(90deg, #e74c3c, #c0392b); }
         
-        .placeholder {
-            text-align: center;
-            padding: 60px 30px;
-            color: #7f8c8d;
-        }
-        
-        .placeholder h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-        
-        .placeholder p {
-            font-size: 1.2em;
+        .framework-notice {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 0 30px 20px 30px;
+            border-radius: 8px;
         }
         
         .footer {
@@ -255,6 +246,7 @@
             }
             .tabs {
                 padding: 0 15px;
+                overflow-x: auto;
             }
             .tab {
                 padding: 15px 20px;
@@ -269,30 +261,31 @@
             <h1>Quality Objectives Dashboard</h1>
             <p>Management Review - Overall Health Assessment</p>
         </div>
-
+        
         <div class="tabs">
-            <div class="tab active" onclick="switchTab('q1-2026')">Q1 2026</div>
+            <div class="tab active" onclick="switchTab('q2-2026')">Q2 2026</div>
+            <div class="tab" onclick="switchTab('q1-2026')">Q1 2026</div>
             <div class="tab" onclick="switchTab('q4')">Q4 2025</div>
             <div class="tab" onclick="switchTab('q3')">Q3 2025</div>
         </div>
         
-        <!-- Q3 2025 Tab Content -->
-        <div id="q3" class="tab-content">
+        <!-- Q2 2026 Tab Content -->
+        <div id="q2-2026" class="tab-content active">
             <div class="summary-cards">
                 <div class="summary-card">
                     <div class="number met">13</div>
                     <div class="label">Objectives Met</div>
                 </div>
                 <div class="summary-card">
-                    <div class="number not-met">5</div>
+                    <div class="number not-met">0</div>
                     <div class="label">Objectives Not Met</div>
                 </div>
                 <div class="summary-card">
-                    <div class="number total">17</div>
+                    <div class="number total">13</div>
                     <div class="label">Total Objectives</div>
                 </div>
                 <div class="summary-card">
-                    <div class="number percentage">76%</div>
+                    <div class="number percentage">100%</div>
                     <div class="label">Success Rate</div>
                 </div>
             </div>
@@ -305,16 +298,16 @@
                     </div>
                     <div class="card-body">
                         <div class="metric">
-                            <span class="metric-name">Customer Satisfaction (80% target)</span>
-                            <span class="metric-value value-met">84% (4.2/5)</span>
+                            <span class="metric-name">Customer Satisfaction (≥3/5)</span>
+                            <span class="metric-value value-met">NITC: 4.25 | DCPPE: 4.2</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-name">Contract Renewal Rate (100% target)</span>
+                            <span class="metric-name">Contract Renewal (100%)</span>
                             <span class="metric-value value-met">100%</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-name">Issue Resolution in 72 Hrs (90% target)</span>
-                            <span class="metric-value value-met">98.4%</span>
+                            <span class="metric-name">Issue Resolution 72hr (90%)</span>
+                            <span class="metric-value value-met">95.9%</span>
                         </div>
                         <div class="progress-bar">
                             <div class="progress-fill progress-excellent" style="width: 100%"></div>
@@ -329,12 +322,12 @@
                     </div>
                     <div class="card-body">
                         <div class="metric">
-                            <span class="metric-name">On-time Delivery (95% target)</span>
+                            <span class="metric-name">On-time Delivery (95%)</span>
                             <span class="metric-value value-met">100%</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-name">First-time Acceptance (90% target)</span>
-                            <span class="metric-value value-met">100%</span>
+                            <span class="metric-name">First-time Acceptance (90%)</span>
+                            <span class="metric-value value-met">93.3%</span>
                         </div>
                         <div class="progress-bar">
                             <div class="progress-fill progress-excellent" style="width: 100%"></div>
@@ -342,82 +335,62 @@
                     </div>
                 </div>
                 
-                <div class="objective-card good">
+                <div class="objective-card excellent">
                     <div class="card-header">
                         <div class="card-title">Continuous Improvement</div>
-                        <span class="status-badge badge-good">Mixed Results</span>
+                        <span class="status-badge badge-excellent">Excellent</span>
                     </div>
                     <div class="card-body">
                         <div class="metric">
-                            <span class="metric-name">Improvement Initiatives (10 target)</span>
-                            <span class="metric-value value-met">30</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-name">Employee Suggestions (10 target)</span>
-                            <span class="metric-value value-not-met">2</span>
+                            <span class="metric-name">Improvement Initiatives (10)</span>
+                            <span class="metric-value value-met">28</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill progress-good" style="width: 50%"></div>
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="objective-card good">
+                <div class="objective-card excellent">
                     <div class="card-header">
                         <div class="card-title">Business Growth & Competitiveness</div>
-                        <span class="status-badge badge-good">Mixed Results</span>
+                        <span class="status-badge badge-excellent">Excellent</span>
                     </div>
                     <div class="card-body">
                         <div class="metric">
-                            <span class="metric-name">Contract Awards ($15M target)</span>
-                            <span class="metric-value value-not-met">$0M awarded</span>
+                            <span class="metric-name">Contract Awards (≥2)</span>
+                            <span class="metric-value value-met">2 (1 prime, 1 sub)</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-name">Proposal Pipeline ($20M target)</span>
-                            <span class="metric-value value-met">$40.7M</span>
+                            <span class="metric-name">Active Pipeline (≥3)</span>
+                            <span class="metric-value value-met">3 opportunities</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill progress-good" style="width: 50%"></div>
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="objective-card good">
+                <div class="objective-card excellent">
                     <div class="card-header">
                         <div class="card-title">Employee Satisfaction & Development</div>
-                        <span class="status-badge badge-good">Mixed Results</span>
+                        <span class="status-badge badge-excellent">Excellent</span>
                     </div>
                     <div class="card-body">
                         <div class="metric">
-                            <span class="metric-name">Employee Satisfaction (85% target)</span>
+                            <span class="metric-name">Voluntary Resignations (≤2)</span>
+                            <span class="metric-value value-met">1</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-name">Employee Satisfaction (80%)</span>
                             <span class="metric-value value-met">89%</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-name">Employee Development (85% target)</span>
-                            <span class="metric-value value-not-met">76%</span>
+                            <span class="metric-name">Employee Development (80%)</span>
+                            <span class="metric-value value-met">82%</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress-fill progress-good" style="width: 50%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="objective-card needs-attention">
-                    <div class="card-header">
-                        <div class="card-title">Talent Acquisition & Retention</div>
-                        <span class="status-badge badge-needs-attention">Needs Attention</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="metric">
-                            <span class="metric-name">Time-to-Fill (30 days target)</span>
-                            <span class="metric-value value-not-met">103 days</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-name">New Hire Retention (90% target)</span>
-                            <span class="metric-value value-not-met">77.4%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill progress-poor" style="width: 0%"></div>
+                            <div class="progress-fill progress-excellent" style="width: 100%"></div>
                         </div>
                     </div>
                 </div>
@@ -429,11 +402,11 @@
                     </div>
                     <div class="card-body">
                         <div class="metric">
-                            <span class="metric-name">Major Non-conformities (0 target)</span>
+                            <span class="metric-name">Major Non-conformities (0)</span>
                             <span class="metric-value value-met">0</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-name">NC Closure Rate (90% target)</span>
+                            <span class="metric-name">NC Closure (80%)</span>
                             <span class="metric-value value-met">100%</span>
                         </div>
                         <div class="progress-bar">
@@ -441,29 +414,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="objective-card good">
-                    <div class="card-header">
-                        <div class="card-title">Financial Performance</div>
-                        <span class="status-badge badge-good">Mixed Results</span>
-                    </div>
-                    <div class="card-body">
-                        <div class="metric">
-                            <span class="metric-name">Net Profit Margin (15% target)</span>
-                            <span class="metric-value value-not-met">10.00%</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-name">Indirect Cost Control</span>
-                            <span class="metric-value value-met">3.45% below target</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill progress-good" style="width: 50%"></div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-
         <!-- Q1 2026 Tab Content -->
         <div id="q1-2026" class="tab-content active">
             <div class="summary-cards">
