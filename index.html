@@ -290,7 +290,8 @@
 
   <!-- TABS -->
   <div class="tabs">
-    <div class="tab active"  onclick="switchTab('q2-2026', this)">Q2 (APR–JUN 2026)</div>
+    <div class="tab active"  onclick="switchTab('q3-2026', this)">Q3 (JUL–SEP 2026)</div>
+    <div class="tab"         onclick="switchTab('q2-2026', this)">Q2 (APR–JUN 2026)</div>
     <div class="tab"         onclick="switchTab('q1-2026', this)">Q1 (JAN–MAR 2026)</div>
     <div class="tab"         onclick="switchTab('q4-2025', this)">Q4 (OCT–DEC 2025)</div>
     <div class="tab"         onclick="switchTab('q3-2025', this)">Q3 (JUL–SEP 2025)</div>
@@ -298,9 +299,140 @@
   </div>
 
   <!-- ══════════════════════════════════════════════
+       Q3 2026
+  ══════════════════════════════════════════════ -->
+  <div id="q3-2026" class="tab-content active">
+    <div class="summary-strip">
+      <div class="summary-cell"><div class="sc-num green">10</div><div class="sc-label">Objectives<br>Met</div></div>
+      <div class="summary-cell"><div class="sc-num red">3</div><div class="sc-label">Objectives<br>Not Met</div></div>
+      <div class="summary-cell"><div class="sc-num blue">13</div><div class="sc-label">Total<br>Objectives</div></div>
+      <div class="summary-cell"><div class="sc-num purple">77%</div><div class="sc-label">Success<br>Rate</div></div>
+    </div>
+    <div class="notice-bar">
+      <strong>Note:</strong>&nbsp; Data from monthly worksheets (JUL–SEP 2026). Pending Q4 Management Review reporting.
+    </div>
+
+    <div class="objectives-grid">
+
+      <div class="obj-card mixed">
+        <div class="card-head">
+          <h3>Customer Satisfaction &amp; Loyalty</h3>
+          <span class="badge badge-mixed">Mixed Results</span>
+        </div>
+        <div class="card-body">
+          <div class="metric-row">
+            <span class="metric-label">Customer Satisfaction (≥3/5)</span>
+            <span class="metric-val met">NITC: 4.25 (survey data) | DCPPE: 3.2/5 (OY2)</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Contract Renewal (100%)</span>
+            <span class="metric-val not-met">NITC: No (OY3) — NCR-1024 | DCPPE: Yes</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Issue Resolution ≤72 hrs (≥90%)</span>
+            <span class="metric-val met">Overall: ~98.7% | NITC: 98.2% | DCPPE: 100% | NN: 100% | ATAEP: 100%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill pf-amber" style="width:67%"></div></div>
+        </div>
+      </div>
+
+      <div class="obj-card excellent">
+        <div class="card-head">
+          <h3>Operational Excellence</h3>
+          <span class="badge badge-excellent">Excellent</span>
+        </div>
+        <div class="card-body">
+          <div class="metric-row">
+            <span class="metric-label">On-Time Delivery (≥95%)</span>
+            <span class="metric-val met">100% all contracts (JUL–SEP)</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">First-Time Acceptance (≥90%)</span>
+            <span class="metric-val met">100% all contracts (JUL–SEP)</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill pf-green" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="obj-card excellent">
+        <div class="card-head">
+          <h3>Continuous Improvement</h3>
+          <span class="badge badge-excellent">Excellent</span>
+        </div>
+        <div class="card-body">
+          <div class="metric-row">
+            <span class="metric-label">Improvement Initiatives (≥10 annually)</span>
+            <span class="metric-val met">21 (trailing 12 months)</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill pf-green" style="width:100%"></div></div>
+        </div>
+      </div>
+
+      <div class="obj-card mixed">
+        <div class="card-head">
+          <h3>Business Growth &amp; Competitiveness</h3>
+          <span class="badge badge-mixed">Mixed Results</span>
+        </div>
+        <div class="card-body">
+          <div class="metric-row">
+            <span class="metric-label">Contract Awards (≥2 in rolling 12 months)</span>
+            <span class="metric-val met">3 (prime: 2, sub: 1)</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Active Pipeline (≥3 prime opportunities)</span>
+            <span class="metric-val not-met">2 active (MBSE Boot Camp, PACRM II) — NCR-1026</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill pf-amber" style="width:50%"></div></div>
+        </div>
+      </div>
+
+      <div class="obj-card mixed">
+        <div class="card-head">
+          <h3>Employee Satisfaction &amp; Development</h3>
+          <span class="badge badge-mixed">Mixed Results</span>
+        </div>
+        <div class="card-body">
+          <div class="metric-row">
+            <span class="metric-label">Voluntary Resignations (≤2/qtr)</span>
+            <span class="metric-val not-met">4 — NCR-1025</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Employee Satisfaction (≥80%)</span>
+            <span class="metric-val met">89% (2025 climate survey)</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Employee Development (≥80%)</span>
+            <span class="metric-val met">82% (2025 climate survey)</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill pf-amber" style="width:67%"></div></div>
+        </div>
+      </div>
+
+      <div class="obj-card excellent">
+        <div class="card-head">
+          <h3>QMS Effectiveness</h3>
+          <span class="badge badge-excellent">Excellent</span>
+        </div>
+        <div class="card-body">
+          <div class="metric-row">
+            <span class="metric-label">Major Non-Conformities (0)</span>
+            <span class="metric-val met">0</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">NC Closure ≤60 days (≥80%)</span>
+            <span class="metric-val met">100% (avg cycle time: 24 days)</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill pf-green" style="width:100%"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
        Q2 2026
   ══════════════════════════════════════════════ -->
-  <div id="q2-2026" class="tab-content active">
+  <div id="q2-2026" class="tab-content">
     <div class="summary-strip">
       <div class="summary-cell"><div class="sc-num green">12</div><div class="sc-label">Objectives<br>Met</div></div>
       <div class="summary-cell"><div class="sc-num red">1</div><div class="sc-label">Objectives<br>Not Met</div></div>
@@ -1028,7 +1160,7 @@
   <!-- FOOTER -->
   <div class="footer">
     <span>Technical Systems Integration, Inc.</span>
-    <span style="color:var(--text-muted); font-weight:400">Quality Management System Dashboard &nbsp;·&nbsp; Updated July 2026</span>
+    <span style="color:var(--text-muted); font-weight:400">Quality Management System Dashboard &nbsp;·&nbsp; Updated October 2026</span>
     <span>ISO 9001:2015</span>
   </div>
 
